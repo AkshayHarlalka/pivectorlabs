@@ -187,7 +187,7 @@
 
     .hero {
       display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(0, 1.1fr);
+      grid-template-columns: minmax(0, 1fr);
       gap: 32px;
       align-items: center;
       padding: 40px 0 30px;
@@ -324,202 +324,6 @@
       width: 24px;
       height: 1px;
       background: linear-gradient(to right, var(--accent), transparent);
-    }
-
-    /* Hero visual */
-
-    .hero-visual {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .hero-panel {
-      width: 100%;
-      max-width: 420px;
-      border-radius: 26px;
-      padding: 18px 18px 16px;
-      background: radial-gradient(circle at 0 0, var(--accent-soft), #050508);
-      border: 1px solid rgba(255, 255, 255, 0.12);
-      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.95);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-panel-header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 14px;
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: 0.14em;
-      color: var(--muted);
-    }
-
-    .hero-panel-header span:first-child {
-      color: #ffffff;
-      font-weight: 500;
-    }
-
-    .hero-panel-chip {
-      padding: 4px 10px;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      background: rgba(0, 0, 0, 0.5);
-      font-size: 10px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-    }
-
-    .hero-panel-chip-dot {
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      background: #27e5ff;
-      box-shadow: 0 0 10px #27e5ff;
-    }
-
-    .panel-grid {
-      display: grid;
-      grid-template-columns: 1.05fr 1.1fr;
-      gap: 12px;
-      align-items: stretch;
-    }
-
-    .panel-card {
-      padding: 12px 12px 11px;
-      border-radius: 18px;
-      border: 1px solid rgba(255, 255, 255, 0.13);
-      background: rgba(8, 8, 16, 0.9);
-      backdrop-filter: blur(10px);
-      position: relative;
-      overflow: hidden;
-    }
-
-    .panel-card h3 {
-      font-size: 12px;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      margin-bottom: 6px;
-    }
-
-    .panel-card p {
-      font-size: 11px;
-      color: var(--muted);
-      line-height: 1.5;
-    }
-
-    .panel-metric {
-      margin-top: 10px;
-      display: flex;
-      align-items: baseline;
-      gap: 6px;
-    }
-
-    .panel-metric-value {
-      font-size: 20px;
-      font-weight: 600;
-    }
-
-    .panel-metric-label {
-      font-size: 10px;
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
-      color: var(--muted);
-    }
-
-    .panel-badge {
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-      font-size: 9px;
-      text-transform: uppercase;
-      letter-spacing: 0.18em;
-      padding: 4px 9px;
-      border-radius: var(--radius-pill);
-      border: 1px solid rgba(255, 255, 255, 0.16);
-      background: rgba(0, 0, 0, 0.6);
-      color: var(--muted);
-    }
-
-    .panel-orbit {
-      position: absolute;
-      inset: -40%;
-      border-radius: 50%;
-      border: 1px dashed rgba(39, 229, 255, 0.12);
-      opacity: 0.6;
-      transform: rotate(-8deg);
-      pointer-events: none;
-    }
-
-    .panel-node {
-      position: absolute;
-      width: 10px;
-      height: 10px;
-      border-radius: 999px;
-      background: var(--accent);
-      box-shadow: 0 0 18px var(--accent);
-    }
-
-    .panel-node.n1 {
-      top: 20%;
-      left: 60%;
-    }
-
-    .panel-node.n2 {
-      bottom: 18%;
-      right: 26%;
-      width: 7px;
-      height: 7px;
-      opacity: 0.7;
-    }
-
-    .panel-node.n3 {
-      top: 30%;
-      right: 12%;
-      width: 6px;
-      height: 6px;
-      opacity: 0.6;
-    }
-
-    .panel-list {
-      list-style: none;
-      margin-top: 8px;
-    }
-
-    .panel-list li {
-      font-size: 11px;
-      color: var(--muted);
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 4px;
-    }
-
-    .panel-list-bullet {
-      width: 6px;
-      height: 6px;
-      border-radius: 999px;
-      border: 1px solid rgba(255, 255, 255, 0.5);
-    }
-
-    .panel-footer {
-      margin-top: 10px;
-      padding-top: 9px;
-      border-top: 1px dashed rgba(255, 255, 255, 0.12);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-size: 10px;
-      color: var(--muted);
-    }
-
-    .panel-footer span.highlight {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.16em;
     }
 
     /* Sections */
@@ -786,18 +590,7 @@
 
       .hero {
         grid-template-columns: minmax(0, 1fr);
-      }
-
-      .hero-visual {
-        order: -1;
-      }
-
-      .hero {
         gap: 22px;
-      }
-
-      .hero-panel {
-        max-width: 100%;
       }
 
       .about-grid,
@@ -903,67 +696,6 @@
           <div class="hero-footnote">
             <div class="hero-footnote-divider"></div>
             <span>From concept sketches to validated prototypes.</span>
-            <span class="highlight">Quietly obsessive about tolerances.</span>
-          </div>
-        </div>
-
-        <div class="hero-visual">
-          <div class="hero-panel" aria-hidden="true">
-            <div class="hero-panel-header">
-              <span>Mechanism Architecture Console</span>
-              <div class="hero-panel-chip">
-                <div class="hero-panel-chip-dot"></div>
-                <span>Live stability model</span>
-              </div>
-            </div>
-
-            <div class="panel-grid">
-              <div class="panel-card">
-                <h3>Semiconductor &amp; AFM systems</h3>
-                <p>
-                  Nanometre-level positioning stacks tuned for throughput, stiffness, and
-                  controllability across thermal drift and dynamic loading.
-                </p>
-                <div class="panel-metric">
-                  <div class="panel-metric-value">0.3 nm</div>
-                  <div class="panel-metric-label">Repeatability target</div>
-                </div>
-                <div class="panel-badge">Built for 24/7 fabs</div>
-              </div>
-
-              <div class="panel-card">
-                <div class="panel-orbit"></div>
-                <div class="panel-node n1"></div>
-                <div class="panel-node n2"></div>
-                <div class="panel-node n3"></div>
-
-                <h3>Robotics &amp; automation</h3>
-                <p>
-                  Integrated motion paths, joint stacks, and end-effectors engineered for
-                  precise, repeatable interaction with real-world parts.
-                </p>
-
-                <ul class="panel-list">
-                  <li>
-                    <span class="panel-list-bullet"></span>
-                    <span>Cycle-time constrained layouts.</span>
-                  </li>
-                  <li>
-                    <span class="panel-list-bullet"></span>
-                    <span>Structural loop &amp; stack-up analysis.</span>
-                  </li>
-                  <li>
-                    <span class="panel-list-bullet"></span>
-                    <span>Interface-clean handoff to controls.</span>
-                  </li>
-                </ul>
-
-                <div class="panel-footer">
-                  <span>Design envelope: 300 mm tools</span>
-                  <span class="highlight">Tuned for high throughput</span>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
       </section>
