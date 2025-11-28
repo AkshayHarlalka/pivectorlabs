@@ -8,6 +8,10 @@
     name="description"
     content="PiVector Labs delivers advanced mechanical engineering solutions and AI agents for high-tech equipment, robotics, automation, and semiconductor industries."
   />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="logo_pv_labs.png" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
@@ -96,12 +100,14 @@
       align-items: center;
       justify-content: center;
       box-shadow: 0 0 24px var(--accent-soft);
+      overflow: hidden;
     }
 
-    .logo-mark span {
-      font-size: 16px;
-      font-weight: 600;
-      letter-spacing: 0.08em;
+    .logo-img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      display: block;
     }
 
     .brand-text {
@@ -425,7 +431,7 @@
       font-size: 14px;
     }
 
-    /* Cards grid (used by multiple sections) */
+    /* Cards grid */
 
     .cards-grid {
       display: grid;
@@ -639,7 +645,7 @@
     <header>
       <div class="brand">
         <div class="logo-mark">
-          <span>π</span>
+          <img src="logo_pv_labs.png" alt="PiVector Labs logo" class="logo-img" />
         </div>
         <div class="brand-text">
           <div class="brand-name">PiVector Labs</div>
@@ -716,7 +722,7 @@
           <div>
             <p class="about-text">
               We sit at the intersection of
-                precision machine design, nanometrology, and automated production systems
+              precision machine design, nanometrology, and automated production systems
               —working hands-on from architecture selection and mechanism layout through to
               prototype, qualification, and handoff.
             </p>
